@@ -1,0 +1,12 @@
+version 15.0
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+hostname sw1
+interface Ethernet0/0
+interface Ethernet0/1
+line con 0
+exec-timeout 0 0
+privilege level 15
+logging synchronous
+end
